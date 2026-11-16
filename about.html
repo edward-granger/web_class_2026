@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-au">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Homepage</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html">    
+                <img src="images/TipToeSoles_Logo_colour.png" alt="Logo" width="120" height="110" class="float-left">
+            </a>
+            </div>
+
+        <div class="banner">
+           <img src="images/Promotion_Banner.png.png" alt="Promotion_Banner" class="promo-banner">
+        </div>
+
+        <div class="user-area">
+
+           <div class="auth-buttons">
+                <span class="signin-status">Not Signed In</span>
+                <button>Login</button>
+                <button>Register</button>
+            </div>
+
+            <div class="search-container">
+                <input type="text" placeholder="Search products/services">
+                <button>🔍</button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN SECTION -->
+    <div class="main-section">
+        <aside class="sidebar">
+    <div class="sidenav">
+
+        <h3>MENU</h3>
+
+        <a href="about.html">About Us</a>
+
+        <button class="dropdown-btn">
+            Products ▼
+        </button>
+
+        <div class="dropdown-container">
+            <a href="products_mens.html">Mens Shoes</a>
+            <a href="products_womens.html">Womens Shoes</a>
+            <a href="all_products.html">All Products</a>
+        </div>
+        
+        <button class="dropdown-btn">
+            Services ▼
+        </button>
+
+        <div class="dropdown-container">
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="delivery.html">Delivery Policy</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+
+        
+
+    </div>
+</aside>
+
+        <main class="homepage">
+            <h1>ABOUT US</h1>
+            <br>
+            <h2>TipToe Soles is an Australian owned and operated company.  We aim to provide comfortable footwear at affordable prices to customers within Australia and around the world.</h2>
+            <p1>At TipToe Soles, we believe that comfortable, stylish, and affordable footwear should be accessible to everyone. Based in Sydney, Australia, we have built our reputation through years of manufacturing high-quality shoes for leading brands. Today, we are proud to launch our own range of footwear designed specifically for people who value comfort, durability, and everyday style.</p1>
+            <p2>Our first collection focuses on daily wear and comfort shoes for adults aged 30 and above. Every pair is carefully crafted using quality materials and modern manufacturing techniques to provide excellent support, long-lasting performance, and all-day comfort.</p2>
+            <br>
+            <h2>Our Mission</h2>
+            <p3>To become Australia's most trusted and affordable footwear brand by delivering comfortable, high-quality shoes that fit seamlessly into everyday life.</p3>
+            <br>
+            <h2>Our Vision</h2>
+            <p4>To be the go-to footwear brand in Australia and around the world, recognised for comfort, quality, affordability, and customer satisfaction.</p4>
+            <br>
+            <h2>Our Commitment</h2>
+            <p5>At TipToe Soles, customer satisfaction is our highest priority. We are committed to providing reliable products, excellent service, and a seamless online shopping experience. We continually strive to improve our products and services based on customer feedback and changing market needs.</p5>
+            <p6>Whether you're heading to work, spending time with family, or simply enjoying your day, TipToe Soles is here to keep you comfortable every step of the way.</p6>
+        </main>
+
+    </div>
+
+    <!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-grid">
+
+        <!-- Socials Box -->
+        <div class="footer-box social-links">
+            <strong>Find Us On</strong>
+            <br><br>
+
+            <a href="https://www.facebook.com/">Facebook</a><br>
+            <a href="https://www.instagram.com/?hl=en">Instagram</a><br>
+            <a href="https://au.linkedin.com/">LinkedIn</a><br>
+            <a href="https://x.com/">X / Twitter</a>
+        </div>
+
+        <!-- Address and Site Links -->
+        <div class="footer-info">
+
+            <div class="footer-box">
+                📍 Address: 322 Avondale Road, Enfield NSW 2133
+            </div>
+
+            <div class="footer-box footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="delivery.html">Delivery Policy</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+for (i = 0; i < dropdown.length; i++) {
+dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+var dropdownContent = this.nextElementSibling;
+if (dropdownContent.style.display === "block") {
+dropdownContent.style.display = "none";
+} else {
+dropdownContent.style.display = "block";
+}
+});
+}
+</script>
+
+</body>
+</html>

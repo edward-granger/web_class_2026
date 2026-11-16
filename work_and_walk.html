@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-au">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Homepage</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html">    
+                <img src="images/TipToeSoles_Logo_colour.png" alt="Logo" width="120" height="110" class="float-left">
+            </a>
+            </div>
+
+        <div class="banner">
+           <img src="images/Promotion_Banner.png.png" alt="Promotion_Banner" class="promo-banner">
+        </div>
+
+        <div class="user-area">
+
+            <div class="auth-buttons">
+                <span class="signin-status">Not Signed In</span>
+                <button>Login</button>
+                <button>Register</button>
+            </div>
+
+            <div class="search-container">
+                <input type="text" placeholder="Search products/services">
+                <button>🔍</button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN SECTION -->
+    <div class="main-section">
+        <aside class="sidebar">
+    <div class="sidenav">
+
+        <h3>MENU</h3>
+
+        <a href="about.html">About Us</a>
+
+        <button class="dropdown-btn">
+            Products ▼
+        </button>
+
+        <div class="dropdown-container">
+            <a href="products_mens.html">Mens Shoes</a>
+            <a href="products_womens.html">Womens Shoes</a>
+            <a href="all_products.html">All Products</a>
+        </div>
+        
+        <button class="dropdown-btn">
+            Services ▼
+        </button>
+
+        <div class="dropdown-container">
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="delivery.html">Delivery Policy</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+
+        
+
+    </div>
+</aside>
+<main class="product-page">
+
+    <a href="#" onclick="history.back(); return false;">
+    ← Back to Products
+</a>
+
+    <div class="product-container">
+
+        <div class="product-image">
+            <img src="images/Work and Walk Chesnut.jpg" alt="work_and_walk">
+        </div>
+
+        <div class="product-info">
+
+            <h1>Work & Walk</h1>
+
+            <p class="price">$85.00</p>
+
+            <p class="description">
+                Hiking-inspired with everyday style, meet the Work and Walk boot. With leather upper, these lace-up ankle boots are built for long days on your feet. The exterior features our No-Worry leather to protect from scuff, stain and water. Plus, the inside is pretty comfy as well with a soft footbed that hugs your heel for extra support.            </p>
+            <ul>
+            <li>Upper is scuff, stain & water-resistant</li>
+            <li>Breathable & soft foam backed mesh lining</li>
+            <li>Padded collar is super soft on the heel</li>
+            <li>Pull-tab for easy fitting</li>
+            <li>Metal eyelet detail</li>
+            <li>Footbed hugs your heel for extra support</li>
+            <li>Removable insole to fit your own orthotics</li>
+            <li>Dual Fit. Remove the insole for a wider fit</li>
+            <br>
+        </ul>
+
+            <label for="size">Size US:</label>
+            <select id="size">
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+            </select>
+
+            <label for="qty">Quantity:</label>
+            <input type="number" id="qty" min="1" value="1">
+
+            <button class="cart-btn">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+    <section class="product-details">
+        <h2>Product Details</h2>
+        <ul>
+            <li>Product code: 30144</li>
+            <li>Sole material: Rubber</li>
+            <li>Sock material: Pigskin</li>
+            <li>Lining material: Mesh</li>
+            <li>Upper material: Leather</li>
+        </ul>
+    </section>
+
+</main>
+    </div>
+
+    <!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-grid">
+
+        <!-- Socials Box -->
+        <div class="footer-box social-links">
+            <strong>Find Us On</strong>
+            <br><br>
+
+            <a href="https://www.facebook.com/">Facebook</a><br>
+            <a href="https://www.instagram.com/?hl=en">Instagram</a><br>
+            <a href="https://au.linkedin.com/">LinkedIn</a><br>
+            <a href="https://x.com/">X / Twitter</a>
+        </div>
+
+        <!-- Address and Site Links -->
+        <div class="footer-info">
+
+            <div class="footer-box">
+                📍 Address: 322 Avondale Road, Enfield NSW 2133
+            </div>
+
+            <div class="footer-box footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="delivery.html">Delivery Policy</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+for (i = 0; i < dropdown.length; i++) {
+dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+var dropdownContent = this.nextElementSibling;
+if (dropdownContent.style.display === "block") {
+dropdownContent.style.display = "none";
+} else {
+dropdownContent.style.display = "block";
+}
+});
+}
+</script>
+
+</body>
+</html>
